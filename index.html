@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <link rel="icon" href="images/logo.png" sizes="32x32" type="image/png" />
+    <title>Byte Burger</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="blur"></div>
+    <header id="navbar">
+      <!-- MOBILE HIDDEN MENU -->
+      <div class="off-screen-menu">
+        <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <ul class="mobile-nav-links">
+          <li><a href="#navbar">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        <section id="off-screen-menu_byte-burger_logo">
+          <img src="images/logo.png" alt="" />
+        </section>
+      </div>
+      <!-- MOIBILE NAVIGATION BAR -->
+      <nav class="nav" id="mobile-nav">
+        <div class="logo">
+          <img src="images/logo.png" alt="byte_burger-logo" />
+        </div>
+        <div class="mobile-ham-btn"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+
+      <!-- DESKTOP NAVIGATION BAR -->
+      <nav class="nav" id="desktop-nav">
+        <div class="logo">
+          <img src="images/logo.png" alt="byte_burger-logo" />
+        </div>
+        <div class="desktop-nav-links_container">
+          <ul class="desktop-nav-links">
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- HERO/HOME BANNER -->
+      <section id="home">
+        <div class="home-title"><h1>Where Every Byte Tastes Better</h1></div>
+        <p class="home-desc">
+          Burgers so good, even your CPU will throttle. Built from scratch, byte
+          by byte.
+        </p>
+        <div id="homeBTN-container">
+          <a href="menu.html" class="home-btn">VIEW MENU</a>
+          <button class="home-btn">ORDER NOW</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="aboutUs">
+        <div class="aboutUs-left">
+          <h4 class="cursiveWords">
+            WELCOME TO <br /><span class="byteBurger-title">Byte Burger!</span>
+          </h4>
+          <br />
+          <div class="aboutUs-info">
+            <p>
+              A passion project where juicy burgers meet clean code. What
+              started as a playful concept by two developers quickly turned into
+              a flavorful brand built on creativity, tech culture, and seriously
+              good food.
+              <br /><br />
+              We believe great burgers should be stacked like great websites:
+              bold, well-built, and unforgettable. Whether you're here for the
+              flavor or the fun, Byte Burger is all about satisfying cravings —
+              one byte at a time.
+            </p>
+            <br /><br />
+            <a class="aboutUs-learn_moreBTN" href="aboutUs.html"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="aboutUs-right">
+          <!-- <img src="images/shop_pic.png" alt="" /> -->
+        </div>
+      </section>
+
+      <section id="featured-products">
+        <h4 class="cursiveWords">
+          Pick Your Dev Approved Stack, <br />
+          <span class="featured-products_title">Be Byte Ready!</span>
+        </h4>
+        <div class="featured-products-showcase">
+          <!-- Product One -->
+          <div class="product-cards">
+            <img src="images/products/2.png" alt="" />
+            <span class="theProducts">The Debugger</span> <br />
+            <p>
+              Jalapeños, pepper jack cheese, and hot sauce — spicy enough to
+              clear your bugs.
+            </p>
+          </div>
+          <!-- Product Two -->
+          <div class="product-cards">
+            <img src="images/products/6.png" alt="" />
+            <span class="theProducts">The Stack Overflow</span><br />
+            <p>
+              Double patty, extra cheese, crispy bacon — overloaded and worth
+              it.
+            </p>
+          </div>
+          <!-- Product Three -->
+          <div class="product-cards">
+            <img src="images/products/4.png" alt="" />
+            <span class="theProducts">Git Pull Patty</span> <br />
+            <p>
+              Classic cheeseburger with lettuce, tomato, onion — always up to
+              date.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h4 class="cursiveWords">
+          Your Byte Cravings, <br />
+          <span class="testimonials_title">Confirmed!</span>
+        </h4>
+        <div class="testimonials-showcase">
+          <div class="testimonial-cards">
+            <div class="testi-left">
+              <img src="images/testimonials/9.png" alt="" />
+            </div>
+            <div class="testi-right">
+              <p>
+                “Tasted the ‘Stack Overflow’ burger and nearly crashed my own
+                system — too good! Definitely deploying this flavor to my
+                stomach again.” <br /><br />
+                <span class="testi-names">— @CodeEater22</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial-cards">
+            <div class="testi-left">
+              <img src="images/testimonials/8.png" alt="" />
+            </div>
+            <div class="testi-right">
+              <p>
+                “I came for the curly fries, but the ‘Firewall Burger’
+                absolutely set my tastebuds on fire. No regrets. No bugs. Just
+                buns.” <br /><br />
+                <span class="testi-names">— Jules, Freelance Dev</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial-cards">
+            <div class="testi-left">
+              <img src="images/testimonials/10.png" alt="" />
+            </div>
+            <div class="testi-right">
+              <p>
+                “Who needs caffeine when the flavor hits this hard? Byte Burger
+                delivers full-stack satisfaction with every bite.” <br /><br />
+                <span class="testi-names">— Alex G., UI/UX Designer</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="call-to-action">
+        <h1>
+          ORDER NOW, DEPLOY
+          <span class="call-to-action-happiness">HAPPINESS!</span>
+        </h1>
+        <button class="call-to-action_orderBTN">ORDER</button>
+        <p>Get free drinks for every git pull</p>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer-byte-burger_tagline-and-socials">
+        <span class="byte-burger_title"><p>~ Byte Burger ~</p></span><br />
+        <p class="byte-burger_tagline-info">
+          Thanks for stopping by. Now go byte something. Fuel your hunger and
+          your hustle — we'll be here serving up the next big stack.
+        </p>
+        <br />
+        <div id="byte-bruger_socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </section>
+      <section id="quick-links">
+        <p class="quick-links_title">Quick Links</p>
+        <br />
+        <ul>
+          <li><a href="#navbar">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </section>
+      <section id="byte-burger_logo">
+        <img src="images/logo.png" alt="" />
+      </section>
+    </footer>
+    <div class="footer">
+      © 2025 Byte Burger. All rights reserved. | Design & Develop by GiDEON
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

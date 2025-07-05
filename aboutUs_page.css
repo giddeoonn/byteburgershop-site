@@ -1,0 +1,267 @@
+#home {
+  position: relative;
+  background-image: url("images/aboutUs_banner.png");
+  background-position: center;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 320px) {
+  #home {
+    background-position: center;
+    height: 40vh;
+  }
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.496);
+}
+.home-title {
+  width: 100%;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+.home-desc {
+  z-index: 2;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 2rem 0;
+  width: 100%;
+}
+/* === About US ===  */
+.aboutUs_section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1rem;
+  gap: 2rem;
+}
+.aboutUs_section-img {
+  margin: 1rem 0.5rem;
+  width: 95%;
+  height: 50vh;
+  background-image: url("images/aboutUs-pic.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 3px 3px orange;
+  border-radius: 5%;
+}
+.aboutUs_section-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.aboutUs_section-info div {
+  display: flex;
+  text-align: justify;
+}
+.aboutUs_section-title {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.aboutUs_section-mission-and-vision {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  text-align: justify;
+  border-radius: 10px;
+  background-color: #fff4e6;
+}
+.aboutUs_section-title__mission-and-vision {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* === THE FOUNDERS === */
+.meet-the-founders_section {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.meet-the-founders_section_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.meet-the-founders_section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meet-the-founders_section-img {
+  max-width: 60%;
+  margin: 0.5rem 0;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 3px orange;
+  padding: 0.5rem;
+}
+.meet-the-founders_section-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.meet-the-founders_section-title-names {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.meet-the-founders_section-title {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.cursiveWords {
+  font-family: cursive;
+  font-weight: 600;
+}
+/* === What Makes Us Different === */
+.what-makes-us-different_section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.what-makes-us-different_section-title {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.what-makes-us-different_section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: justify;
+  gap: 1rem;
+}
+.what-makes-us-different_section ul li i {
+  color: orange;
+}
+.what-makes-us-different_section ul li span {
+  font-weight: 600;
+}
+/* ========= TABLET VIEW ========== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* === About US ===  */
+  .aboutUs_section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+    gap: 2.5rem;
+  }
+  .meet-the-founders_section .meet-the-founders_section-cards {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 3rem;
+  }
+  .meet-the-founders_section-names {
+    display: flex;
+    flex-direction: column;
+  }
+  .meet-the-founders_section-title {
+    font-size: 3rem;
+  }
+  /* === What Makes Us Different === */
+  .what-makes-us-different_section {
+    padding: 1.5rem;
+  }
+  .cursiveWords {
+    font-size: 1.8rem;
+  }
+  .what-makes-us-different_section-title {
+    font-size: 3rem;
+  }
+  .what-makes-us-different_section ul {
+    font-size: 1.5rem;
+  }
+}
+/* ========== DESKTOP VIEWW =========== */
+@media screen and (min-width: 1024px) {
+  /* === About US ===  */
+  .aboutUs_section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .aboutUs_section-img {
+    border-radius: 0px;
+  }
+  .aboutUs_section-title {
+    font-size: 2.5rem;
+  }
+  .aboutUs_section-title__mission-and-vision {
+    font-size: 2rem;
+  }
+  /*  ==== Founders ===  */
+  .mtf-and-wmud_sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .meet-the-founders_section {
+    padding: 0;
+    margin: 0;
+  }
+  .meet-the-founders_section_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: 100%;
+  }
+  .meet-the-founders_section-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .meet-the-founders_section-names {
+    display: flex;
+    flex-direction: column;
+  }
+  .meet-the-founders_section-title {
+    font-size: 3rem;
+  }
+  .meet-the-founders_section-img {
+    width: 25%;
+  }
+  /* === What Makes Us Different === */
+  .what-makes-us-different_section {
+    padding: 1.5rem;
+  }
+  .cursiveWords {
+    font-size: 1.8rem;
+  }
+  .what-makes-us-different_section-title {
+    font-size: 3rem;
+  }
+  .what-makes-us-different_section ul {
+    font-size: 1.5rem;
+  }
+}
